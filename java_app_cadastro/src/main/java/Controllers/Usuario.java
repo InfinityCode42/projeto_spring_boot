@@ -8,15 +8,15 @@ public class Usuario {
 	
 	@RequestMapping("/login")
 	public String login() {
-		return "usuario/login";
+		return "Usuario/login";
 	}
 	@RequestMapping("/cadastro")
 	public String CadastroUsuario(){
-		return "usuario/cadastro";
+		return "Usuario/cadastro";
 	}
 	
 	@RequestMapping("/esquecisenha")
 	public String esqueciSenha() {
-		return "usuario/esquecisenha";
+		return "Usuario/esquecisenha";
 	}
 }
