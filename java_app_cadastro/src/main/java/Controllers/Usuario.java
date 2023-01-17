@@ -7,7 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Usuario {
 	
 	@RequestMapping("/login")
-	public String index() {
+	public String login() {
 		return "usuario/login";
+	}
+	@RequestMapping("/cadastro")
+	public String CadastroUsuario(){
+		return "usuario/cadastro";
+	}
+	
+	@RequestMapping("/esquecisenha")
+	public String esqueciSenha() {
+		return "usuario/esquecisenha";
 	}
 }
