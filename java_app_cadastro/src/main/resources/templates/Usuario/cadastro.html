@@ -1,9 +1,62 @@
-<html>
-<header>
-</header>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/css/estilo_site.css}">
+        <script th:src="@{/jquery-3.6.3.min.js}"></script>
+        <script th:src="@{/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js}"></script>
+        <link rel="fonts" th:href="@{/fonts}">
+    
+    
+        <title>Site</title>
+    </head>
 <body>
-<h1>Olá cadastro</h1>
-
+    <nav class="navbar navbar-geral">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark titulo_navbar">InfinityCode42</a>
+            <div class="d-flex">
+                <form class="" href="/cadastro">
+                    <button class="btn btn botao-geral" type="submit">Cadastra-se</button>
+                </form>
+                <form class="ml-4 " href="/login"  style="margin-left: 10px;">
+                    <button class="btn btn botao-geral" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="d-flex mt-5 justify-content-center">
+                <div class="card mb-3 card-cadastro">
+                    <div class="card-body" >
+                        <h2 class="text-dark">Cadastre-se</h2>
+                        <div class="col-12 mt-4 mb-3">
+                            <label class="col-12 mb-2 mt-2 text-dark">Nome Completo*</label>
+                            <input class=" input-cadastro-login col-12" type="text" name="nomeCompleto" autocomplete="off">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="col-12 mb-2 mt-2 text-dark">E-mail*</label>
+                            <input class=" input-cadastro-login col-12" type="email" name="nomeCompleto" autocomplete="off">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="col-12 mb-2 mt-2 text-dark">Senha*</label>
+                            <input class=" input-cadastro-login col-12" type="password" name="nomeCompleto" autocomplete="off">
+                        </div>
+                        <hr class="text-dark mt-2">
+                        <div class="col-12 mt-2">
+                            <label class="text-dark"> Já possui uma conta? <a class="text-dark" href="/login">Faça o login</a></label>
+                        </div>
+                        <div class="col-12 mt-1">
+                            <button class="btn botao-geral mt-4 mb-2" style="height: 50px; " role="button">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
