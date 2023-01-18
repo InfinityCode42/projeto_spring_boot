@@ -11,7 +11,7 @@
         <link rel="fonts" th:href="@{/fonts}">
     
     
-        <title>Site</title>
+        <title>Cadastro</title>
     </head>
 <body>
     <nav class="navbar navbar-geral">
@@ -24,28 +24,30 @@
     </nav>
     <div class="container-fluid">
         <div class="row d-flex">
-            <div class="d-flex mt-5 justify-content-center">
-                <div class="card mb-3 card-cadastro">
-                    <div class="card-body" >
-                        <h2 class="text-dark">Cadastre-se</h2>
-                        <div class="col-12 mt-2 mb-3">
-                            <label class="col-12 mb-2 mt-2 text-dark">Nome Completo*</label>
-                            <input class=" input-cadastro-login col-12" type="text" name="nomeCompleto" autocomplete="off">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <label class="col-12 mb-2 mt-2 text-dark">E-mail*</label>
-                            <input class=" input-cadastro-login col-12" type="email" name="nomeCompleto" autocomplete="off">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <label class="col-12 mb-2 mt-2 text-dark">Senha*</label>
-                            <input class=" input-cadastro-login col-12" type="password" name="nomeCompleto" autocomplete="off">
-                        </div>
-                        <hr class="text-dark mt-2">
-                        <div class="col-12 mt-2">
-                            <label class="text-dark"> Já possui uma conta? <a class="text-dark" style="text-decoration:underline;" href="/login">Faça o login</a></label>
-                        </div>
-                        <div class="col-12 mt-2">
-                            <button class="botao-geral" style="width: 100%;" role="button">Cadastrar</button>
+            <div class="col-12">
+                <div class="d-flex mt-5 justify-content-center">
+                    <div class="card mb-3 card-cadastro">
+                        <div class="card-body" >
+                            <h2 class="text-dark">Cadastre-se</h2>
+                            <div class="col-12 mt-2 mb-3">
+                                <label class="col-12 mb-2 mt-2 text-dark">Nome Completo*</label>
+                                <input class=" input-cadastro-login col-12" type="text" name="nomeCompleto" autocomplete="off">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="col-12 mb-2 mt-2 text-dark">E-mail*</label>
+                                <input class=" input-cadastro-login col-12" type="email" name="email" autocomplete="off">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="col-12 mb-2 mt-2 text-dark">Senha*</label>
+                                <input class=" input-cadastro-login col-12" type="password" name="senha" autocomplete="off">
+                            </div>
+                            <hr class="text-dark mt-2">
+                            <div class="col-12 mt-2">
+                                <label class="text-dark">Já possui uma conta?<a class="text-dark" style="text-decoration:underline;" href="/login">Faça o login</a></label>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <button class="botao-geral" style="width: 100%;" role="button">Cadastrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
